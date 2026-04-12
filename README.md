@@ -1,20 +1,25 @@
 # gen-ai-assignments
 
-Hands-on assignments for Generative AI practice.
+Repository for all Generative AI assignments, supporting materials, and study notes.
 
 ## Structure
 
+Each assignment lives in its own folder and may include notebooks, helper scripts, assets, and documentation.
+
 - `01-ai-foundry-basics/`
-  - `01_text_json_guardrails.ipynb`
-  - `02_reasoning_function_calling.ipynb`
-  - `03_multimodal_models.ipynb`
-  - `cli_chat_tool.py`
+  - `*.ipynb`
+  - `*.py`
   - `assets/`
+  - `images/`
   - `docs/`
-    - `glossary_en.md`
-    - `glossary_es.md`
-    - `README.md`
-  - `README.md`
+  - `instructions/`
+
+## Organization Notes
+
+- Keep notebook-specific materials inside the corresponding assignment folder.
+- Use `docs/` for glossary files, notes, or supporting explanations.
+- Use `assets/` and `images/` for generated or referenced media.
+- Use `instructions/` for prompts, task descriptions, or assignment guidance.
 
 ## Quick start
 
@@ -23,5 +28,5 @@ Hands-on assignments for Generative AI practice.
    ```bash
    pip install -r requirements.txt
    ```
-3. Copy `01-ai-foundry-basics/.env.example` to `01-ai-foundry-basics/.env` and set your values.
-4. Open the notebooks and run the exercises.
+3. Copy the relevant `.env.example` file from the assignment folder you are working in and set your values.
+4. Open the notebooks in that assignment folder and run the exercises.
