@@ -19,5 +19,5 @@ Hands-on assignments for Generative AI practice.
    ```bash
    pip install -r requirements.txt
    ```
-3. Copy `.env.example` to `.env` and set your values.
+3. Copy `01-ai-foundry-basics/.env.example` to `01-ai-foundry-basics/.env` and set your values.
 4. Open the notebooks and run the exercises.

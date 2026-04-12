@@ -6,3 +6,4 @@ python-dotenv
 # Azure AI / Foundry SDKs (adjust versions as needed)
 azure-ai-inference
 azure-identity
+openai
