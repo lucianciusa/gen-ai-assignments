@@ -10,6 +10,10 @@ Hands-on assignments for Generative AI practice.
   - `03_multimodal_models.ipynb`
   - `cli_chat_tool.py`
   - `assets/`
+  - `docs/`
+    - `glossary_en.md`
+    - `glossary_es.md`
+    - `README.md`
   - `README.md`
 
 ## Quick start
