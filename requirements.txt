@@ -1,0 +1,8 @@
+# Core notebook tooling
+jupyter
+ipykernel
+python-dotenv
+
+# Azure AI / Foundry SDKs (adjust versions as needed)
+azure-ai-inference
+azure-identity
