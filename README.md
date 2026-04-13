@@ -6,9 +6,16 @@ Repository for all Generative AI assignments, supporting materials, and study no
 
 Each assignment lives in its own folder and may include notebooks, helper scripts, assets, and documentation.
 
-- `01-ai-foundry-basics/`
+- `01-foundry_exploration/`
   - `*.ipynb`
   - `*.py`
+  - `assets/`
+  - `images/`
+  - `docs/`
+  - `instructions/`
+
+- `02-prompt_engineering-models_parameters/`
+  - `*.ipynb`
   - `assets/`
   - `images/`
   - `docs/`
