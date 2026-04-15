@@ -1,0 +1,541 @@
+prompt_id,category,prompt,base_output,finetuned_output,qualitative_judgment,error
+1,dataset_like,"Give me a 6-step checklist to launch a fine-tuning job in Azure AI Foundry, including one verification step and one common mistake to avoid.","Certainly! Here’s a 6-step checklist to launch a fine-tuning job in Azure AI Foundry, including a verification step and a common mistake to avoid:
+
+### 6-Step Checklist for Launching a Fine-Tuning Job in Azure AI Foundry
+
+1. **Define Your Dataset**:
+   - Ensure you have a well-prepared dataset that is suitable for fine-tuning. This dataset should be labeled and formatted correctly according to the requirements of the model you are fine-tuning.
+
+2. **Select the Pre-trained Model**:
+   - Choose the appropriate pre-trained model that you want to fine-tune. Make sure it aligns with your task (e.g., text classification, image recognition).
+
+3. **Configure Fine-Tuning Parameters**:
+   - Set the hyperparameters for the fine-tuning job, including learning rate, batch size, number of epochs, and any other relevant settings. Ensure these parameters are optimized for your dataset.
+
+4. **Set Up the Training Environment**:
+   - Choose the appropriate compute resources (e.g., GPU or CPU) for your fine-tuning job. Ensure that the environment is configured correctly with all necessary dependencies and libraries.
+
+5. **Launch the Fine-Tuning Job**:
+   - Start the fine-tuning job through the Azure AI Foundry interface. Monitor the job for any immediate errors or issues during the initial stages of training.
+
+6. **Verification Step**:
+   - After the fine-tuning job completes, verify the model's performance by evaluating it on a validation dataset. Check metrics such as accuracy, precision, recall, or F1 score to ensure the model meets your expectations.
+
+### Common Mistake to Avoid:
+- **Ignoring Data Quality**: One common mistake is neglecting the quality of the training data. Ensure that your dataset is clean, well-labeled, and representative of the problem you are trying to solve. Poor data quality can lead to suboptimal model performance.
+
+By following this checklist, you can effectively","Here’s a concise 6-step checklist for launching a fine-tuning job in Azure AI Foundry:
+
+1. **Step**: Prepare your training data.
+   **Action**: Ensure the data is in the correct format and meets the job requirements.
+   **Common Mistake to Avoid**: Using inconsistent data formats across training examples.
+   
+2. **Step**: Configure the fine-tuning job.
+   **Action**: Use a descriptive name and keep default settings unless there's a reason to change them.
+   **Common Mistake to Avoid**: Starting a job without confirming all parameters are set.
+   
+3. **Step**: Verify the deployment name matches your .env value.
+   **Action**: Check the .env file and the deployment settings side by side.
+   **Common Mistake to Avoid**: Submitting metrics without interpretation.
+   
+4. **Step**: Document your decisions.
+   **Action**: Write a brief justification for each setting you chose.
+   **Common Mistake to Avoid**: Leaving placeholder comments in the notebook.
+   
+5. **Step**: Validate outputs against the prompt.
+   **Action**: Ensure each prompt has a corresponding output in the notebook.
+   **Common Mistake to Avoid**: Comparing different prompts instead of the same prompt.
+   
+6. **Step**: Save outputs in the notebook section.
+   **Action**: Use the correct markdown header for each section.
+   **Common Mistake to Avoid**: Submitting metrics without interpretation.
+",,
+2,dataset_like,I am a beginner. Explain how to prepare training_set.jsonl and validation_set.jsonl in simple terms and include exact file names.,"Certainly! Preparing `training_set.jsonl` and `validation_set.jsonl` files involves organizing your data in a specific format that can be easily read by machine learning models. Here’s a simple step-by-step guide to help you create these files.
+
+### Step 1: Understand the JSON Lines Format
+
+JSON Lines (or `.jsonl`) is a format where each line is a valid JSON object. This means that each line in your file represents a separate data entry.
+
+### Step 2: Prepare Your Data
+
+You need to have your data ready. For example, if you are working on a text classification task, you might have sentences and their corresponding labels. Here’s a simple example of what your data might look like:
+
+| Text                     | Label     |
+|--------------------------|-----------|
+| ""I love programming.""    | ""positive""|
+| ""I hate bugs.""           | ""negative""|
+| ""Python is great!""       | ""positive""|
+| ""Debugging is frustrating.""| ""negative""|
+
+### Step 3: Create the Training and Validation Sets
+
+1. **Split Your Data**: Divide your data into two parts: one for training and one for validation. A common split is 80% for training and 20% for validation.
+
+2. **Format the Data**: Each entry should be a JSON object. For the example above, the JSON objects would look like this:
+
+```json
+{""text"": ""I love programming."", ""label"": ""positive""}
+{""text"": ""I hate bugs."", ""label"": ""negative""}
+{""text"": ""Python is great!"", ""label"": ""positive""}
+{""text"": ""Debugging is frustrating."", ""label"": ""negative""}
+```
+
+### Step 4: Create the Files
+
+1. **Create `training_set.jsonl`**: Open a text editor and write the JSON objects for your training data, one per line. For example:
+
+**File: `training_set.jsonl","Here’s a beginner-friendly approach to preparing training_set.jsonl and validation_set.jsonl.
+1. Goal: complete it quickly without skipping required evidence.
+2. Steps:
+   - run a small test before starting expensive operations
+   - confirm losses are visible by epoch before writing analysis
+   - Save outputs in the notebook section that matches the task.
+3. Recommended file names:
+   - fine-tuning_config.json
+   - training_report.json
+   - validation_results.json
+4. If blocked:
+   - retry upload after validating JSONL encoding.
+   - reduce scope to one prompt and response if outputs are too large.
+5. Keep for reference: submission checklist.
+",,
+3,dataset_like,How should I justify choosing Developer training type for an academic assignment? Keep it short and practical.,"When justifying the choice of Developer training type for your academic assignment, consider the following points:
+
+1. **Skill Development**: Developer training focuses on practical skills and hands-on experience, which are essential for mastering programming languages and development tools.
+
+2. **Industry Relevance**: This training aligns with current industry standards and practices, ensuring that the knowledge gained is applicable in real-world scenarios.
+
+3. **Problem-Solving Focus**: Developer training emphasizes critical thinking and problem-solving, which are crucial for tackling complex software development challenges.
+
+4. **Collaboration and Teamwork**: Many developer training programs include group projects, fostering collaboration skills that are vital in professional environments.
+
+5. **Career Advancement**: Completing developer training can enhance employability and career prospects, as it demonstrates a commitment to continuous learning and professional growth.
+
+By highlighting these points, you can effectively justify your choice of Developer training type for your assignment.","Justification for choosing Developer training type:
+
+1. **Relevance**: Developer training directly aligns with the project goal of building a robust application, ensuring all team members are equipped to handle technical challenges.
+2. **Efficiency**: Focused and practical, this approach minimizes time spent on theory and maximizes time spent on actual development.
+3. **Outcome-oriented**: Ensures measurable results by tying each task to a specific deliverable in the project plan.
+4. **Risk management**: Identifies and mitigates the most critical risks early, preventing costly delays later in the project.
+5. **Documentation**: Keeps concise records that satisfy academic requirements without adding unnecessary overhead.
+
+Keep it concise and ensure all points are covered.",,
+4,dataset_like,Create a fast runbook to deploy a fine-tuned model and test it against the base model in the same notebook.,"Certainly! Below is a fast runbook for deploying a fine-tuned machine learning model and testing it against a base model within the same Jupyter notebook. This example assumes you are using a popular library like Hugging Face's Transformers for NLP tasks, but the principles can be adapted to other frameworks as well.
+
+### Fast Runbook: Deploying and Testing Fine-Tuned Model
+
+#### Prerequisites
+- Python installed (preferably 3.7 or higher)
+- Jupyter Notebook
+- Required libraries: `transformers`, `torch`, `datasets`, `sklearn`, etc.
+
+#### Step 1: Setup Environment
+Make sure you have the necessary libraries installed. You can install them using pip:
+
+```bash
+pip install transformers torch datasets scikit-learn
+```
+
+#### Step 2: Import Libraries
+Start your Jupyter Notebook and import the necessary libraries.
+
+```python
+import torch
+from transformers import AutoModelForSequenceClassification, AutoTokenizer
+from datasets import load_dataset
+from sklearn.metrics import accuracy_score, classification_report
+```
+
+#### Step 3: Load Base Model
+Load the base model and tokenizer. For this example, we will use a pre-trained model from Hugging Face.
+
+```python
+# Load base model and tokenizer
+base_model_name = ""distilbert-base-uncased""
+base_model = AutoModelForSequenceClassification.from_pretrained(base_model_name, num_labels=2)
+tokenizer = AutoTokenizer.from_pretrained(base_model_name)
+```
+
+#### Step 4: Load Fine-Tuned Model
+Load your fine-tuned model. Make sure you have the fine-tuned model saved in a directory.
+
+```python
+# Load fine-tuned model
+fine_tuned_model_path = ""./fine_tuned_model""  # Path to your fine-tuned model
+fine_tuned_model = AutoModelForSequenceClassification.from_pretrained(fine_tuned_model_path)
+```
+
+#### Step 5: Load Dataset
+Load a dataset for","Here’s a concise and efficient runbook for deploying a fine-tuned model and testing it against the base model in the same notebook.
+
+### Fast Runbook: Deploy Fine-Tuned Model and Test Against Base Model
+
+#### Objective
+Deploy a fine-tuned model and test it against the base model in the same notebook.
+
+#### Prerequisites
+- Access to the appropriate Azure subscription.
+- Required roles assigned: Machine Learning Contributor.
+- Environment set up with required packages.
+
+#### Steps
+1. **Upload Required Files**
+   - Navigate to the correct project and upload the required files.
+   - Ensure files are uploaded with the correct names.
+
+2. **Run Core Notebook Section**
+   - Execute the core section that deploys the fine-tuned model.
+   - Validate that the deployment name matches your .env value.
+
+3. **Validate Deployment**
+   - Check that both base and fine-tuned responses are captured.
+   - Ensure no errors are present in the notebook logs.
+
+4. **Save Outputs**
+   - Save all outputs in the notebook section that corresponds to the task.
+   - Use clear and concise captions for each output.
+
+5. **Capture Proofs**
+   - Capture proof of deployment settings.
+   - Capture proof of validation results.
+
+#### Expected Outcome
+A fine-tuned model is deployed, and validation results are captured in the notebook.
+
+#### Troubleshooting Tips
+- If the deployment fails, check the error message and ensure the JSON structure is correct.
+- If metrics are missing, re-run the metric calculation cell after confirming all inputs are correct.
+
+#### Cleanup Steps
+- Delete any resources created for testing that are not needed for production.
+- Ensure no orphaned resources remain in the project.
+
+#### Notes
+Keep this runbook concise and focused on the required steps. Use the provided templates and adjust only as necessary.",,
+5,out_of_dataset,Design a troubleshooting flow for when a Foundry fine-tuning job stays queued for too long.,"When a Foundry fine-tuning job stays queued for too long, it can be frustrating and may indicate underlying issues. Here’s a structured troubleshooting flow to help diagnose and resolve the problem:
+
+### Troubleshooting Flow for Foundry Fine-Tuning Job Stuck in Queue
+
+1. **Initial Assessment**
+   - **Check Job Status**: Confirm the job is indeed in a queued state and not in a running or completed state.
+   - **Time in Queue**: Note how long the job has been queued. Define what ""too long"" means in your context (e.g., longer than expected based on previous jobs).
+
+2. **Review Job Configuration**
+   - **Parameters**: Verify that the job parameters are correctly configured (e.g., dataset, model type, hyperparameters).
+   - **Resource Allocation**: Check if the job requires more resources than are currently available (e.g., GPU/CPU, memory).
+
+3. **System Resource Check**
+   - **Cluster Status**: Check the status of the compute cluster. Are there sufficient resources available?
+   - **Resource Utilization**: Monitor the resource utilization (CPU, GPU, memory) on the cluster. Are there other jobs consuming excessive resources?
+   - **Pending Jobs**: Look for other jobs in the queue. Are there many jobs ahead of yours? What are their statuses?
+
+4. **Job Dependencies**
+   - **Dependency Check**: Determine if your job has dependencies on other jobs that need to complete first. Are those jobs stuck or taking longer than expected?
+   - **Data Availability**: Ensure that all necessary data for the job is available and accessible.
+
+5. **Logs and Error Messages**
+   - **Check Logs**: Review the logs for any warnings or error messages related to your job or the system.
+   - **Error Codes**: Look for specific error codes that might indicate why the job is queued.
+
+6. **Configuration Limits**
+   - **Queue Limits**: Check if there","Here's a structured troubleshooting flow for when a Foundry fine-tuning job stays queued for too long:
+
+### Troubleshooting Flow: Foundry Fine-Tuning Job Stays Queued
+
+1. **Start Here**: Identify the specific fine-tuning job and document its parameters.
+   - **Input**: Job ID and parameters.
+   - **Output**: Documented job details.
+
+2. **Check Status**: Ensure you are checking the status in the correct Foundry project.
+   - **Input**: Project name.
+   - **Output**: Confirmed project context.
+
+3. **Basic Validation**: Validate the base and fine-tuned responses are both captured.
+   - **Input**: Validation checklist.
+   - **Output**: Completed checklist.
+
+4. **Intermediate Save**: Save intermediate results with clear labels.
+   - **Input**: Label format.
+   - **Output**: Saved intermediate result.
+
+5. **Check Dependencies**: Ensure all dependencies are installed before starting the job.
+   - **Input**: Required dependencies list.
+   - **Output**: Installed dependencies confirmation.
+
+6. **Capture Output**: Capture output in the notebook section that matches the task.
+   - **Input**: Notebook section identifier.
+   - **Output**: Captured output.
+
+7. **Final Validation**: Validate all required outputs are present in the notebook.
+   - **Input**: Validation checklist.
+   - **Output**: Completed checklist.
+
+8. **Finish Here**: Ensure all mandatory deliverables are submitted.
+   - **Input**: Deliverable checklist.
+   - **Output**: Confirmed submission status.",,
+6,out_of_dataset,What metrics besides loss would you track to evaluate assistant quality after deployment?,"Evaluating the quality of an AI assistant after deployment involves tracking a variety of metrics beyond just loss. Here are several important metrics to consider:
+
+1. **User Satisfaction**:
+   - **Net Promoter Score (NPS)**: Measures user loyalty and satisfaction.
+   - **Customer Satisfaction Score (CSAT)**: Direct feedback from users about their experience.
+   - **User Ratings**: Average ratings given by users for interactions.
+
+2. **Engagement Metrics**:
+   - **Session Length**: Average duration of user interactions with the assistant.
+   - **Session Frequency**: How often users return to interact with the assistant.
+   - **Active Users**: Daily or monthly active users to gauge retention.
+
+3. **Task Completion Rate**:
+   - **Success Rate**: Percentage of tasks or queries successfully completed by the assistant.
+   - **First Contact Resolution (FCR)**: Percentage of issues resolved in the first interaction without escalation.
+
+4. **Response Quality**:
+   - **Response Time**: Average time taken to respond to user queries.
+   - **Relevance Score**: User ratings on the relevance of the assistant's responses.
+   - **Error Rate**: Frequency of incorrect or irrelevant responses.
+
+5. **User Retention**:
+   - **Churn Rate**: Percentage of users who stop using the assistant over a given period.
+   - **Return Rate**: Percentage of users who return after their first interaction.
+
+6. **User Behavior Analysis**:
+   - **Drop-off Rate**: Percentage of users who abandon the conversation or task at various points.
+   - **Path Analysis**: Common paths taken by users during interactions, identifying where they succeed or fail.
+
+7. **Feedback and Improvement Metrics**:
+   - **User Feedback Volume**: Amount of feedback received, both positive and negative.
+   - **Feature Usage**: Tracking which features are used most frequently and which are ignored.
+
+8. **Contextual Understanding**:
+  ","When evaluating assistant quality after deployment, it's important to track a variety of metrics beyond just loss. Here are some key metrics to consider:
+
+1. **Response Accuracy**: Measure how often the assistant provides a correct and relevant answer to user queries.
+
+2. **Response Completeness**: Evaluate whether the assistant's responses fully address the user's question or request.
+
+3. **Response Latency**: Track the time it takes for the assistant to generate a response after receiving a prompt.
+
+4. **User Satisfaction**: Collect user feedback on a scale (e.g., 1-5) to gauge satisfaction with the assistant's performance.
+
+5. **Task Success Rate**: Measure the percentage of tasks that users complete successfully with the assistant's help.
+
+6. **Fallback Rate**: Monitor how often the assistant falls back to a default response or indicates it cannot answer.
+
+7. **Engagement Metrics**: Track metrics like messages per session and session duration to understand user engagement.
+
+8. **Error Rate**: Calculate the percentage of responses that contain errors or require correction.
+
+9. **Context Retention**: Evaluate how well the assistant maintains context across multiple turns in a conversation.
+
+10. **Comparison to Baseline**: If applicable, compare the new assistant's performance to a previous version or a baseline model.
+
+By tracking these metrics, you can gain a comprehensive understanding of the assistant's performance and identify areas for improvement.",,
+7,out_of_dataset,Propose a lightweight rubric to score response quality for support-chatbot prompts.,"Certainly! Here’s a lightweight rubric to evaluate the quality of responses generated by a support chatbot. This rubric consists of five key criteria, each rated on a scale from 1 to 5, with 1 being poor and 5 being excellent. 
+
+### Chatbot Response Quality Rubric
+
+| Criteria               | Description                                                                 | Score (1-5) |
+|------------------------|-----------------------------------------------------------------------------|-------------|
+| **Relevance**          | How well does the response address the user's query?                       |             |
+| **Clarity**            | Is the response clear and easy to understand?                              |             |
+| **Completeness**       | Does the response provide sufficient information to resolve the issue?     |             |
+| **Tone and Empathy**   | Is the tone appropriate, friendly, and empathetic?                         |             |
+| **Actionability**      | Does the response provide clear next steps or solutions for the user?      |             |
+
+### Scoring Guidelines
+
+- **1 - Poor**: The response fails to address the query, is unclear, incomplete, lacks empathy, and does not provide actionable steps.
+- **2 - Fair**: The response is somewhat relevant but lacks clarity or completeness, shows minimal empathy, and offers vague next steps.
+- **3 - Good**: The response is relevant and clear but may lack some detail or empathy; it provides some actionable steps.
+- **4 - Very Good**: The response is relevant, clear, and mostly complete, with an appropriate tone and clear next steps.
+- **5 - Excellent**: The response fully addresses the query, is clear and complete, demonstrates empathy, and provides specific, actionable steps.
+
+### Total Score Calculation
+- Add the scores from each criterion to get a total score out of 25.
+- Use the total score to categorize the response quality:
+  - **21-25**: Excellent
+  - **16-20**: Good
+  - **11-15**:","Here’s a lightweight rubric to score response quality for support-chatbot prompts. It focuses on key aspects of response quality while being simple and quick to use.
+
+### Lightweight Rubric for Scoring Response Quality
+
+| Criterion       | Description                                                                 | Points |
+|-----------------|-----------------------------------------------------------------------------|--------|
+| Relevance       | The response addresses the user's question or issue directly.              | 0-2    |
+| Clarity         | The response is clear and easy to understand.                              | 0-2    |
+| Completeness    | The response provides all necessary information without being verbose.     | 0-2    |
+| Tone            | The response maintains a professional and empathetic tone.                 | 0-2    |
+| Timeliness      | The response is delivered within an acceptable timeframe.                  | 0-1    |
+| Total           | Sum of points for all criteria (max 9).                                   | 0-9    |
+
+### Scoring Guidelines
+- **0 Points**: Criterion not met.
+- **1 Point**: Criterion partially met; significant improvements needed.
+- **2 Points**: Criterion fully met; no improvements needed.
+
+### Usage Instructions
+1. Evaluate each criterion and assign points based on the guidelines.
+2. Provide brief feedback for each criterion.
+3. Keep a copy for your records.
+4. Aim to complete one rubric per response before moving to the next.",,
+8,out_of_dataset,How would you adapt this workflow if the team needs bilingual support in English and Spanish?,"To adapt a workflow for bilingual support in English and Spanish, consider the following steps:
+
+1. **Identify Key Roles**: Ensure that team members who are responsible for communication, documentation, and customer support are proficient in both languages. This may involve hiring bilingual staff or providing language training for existing employees.
+
+2. **Create Bilingual Documentation**: All documentation, including project plans, guidelines, and training materials, should be available in both English and Spanish. Use clear and simple language to ensure understanding.
+
+3. **Implement Translation Tools**: Utilize translation tools and software to assist with real-time communication and document translation. However, ensure that a fluent speaker reviews automated translations for accuracy.
+
+4. **Establish a Translation Process**: Set up a process for translating new content as it is created. This could involve assigning a dedicated translator or using a translation service for larger documents.
+
+5. **Bilingual Communication Channels**: Ensure that all communication channels (emails, chat platforms, etc.) support both languages. Encourage team members to communicate in the language they are most comfortable with, and provide translation support when necessary.
+
+6. **Regular Training and Workshops**: Conduct regular training sessions and workshops in both languages to ensure all team members are on the same page and can collaborate effectively.
+
+7. **Feedback Mechanism**: Implement a feedback mechanism to assess the effectiveness of bilingual support. This could involve surveys or regular check-ins to understand any challenges faced by team members.
+
+8. **Cultural Sensitivity Training**: Provide training on cultural differences and sensitivities to ensure that all team members can communicate respectfully and effectively across language barriers.
+
+9. **Bilingual Customer Support**: If applicable, ensure that customer support is available in both languages. This may involve hiring bilingual support staff or training existing staff to handle inquiries in both languages.
+
+10. **Monitor and Adjust**: Continuously monitor the effectiveness of the bilingual workflow and make adjustments as needed based on team feedback and changing needs.
+
+By implementing these steps,","To adapt a workflow for bilingual support in English and Spanish, follow these steps:
+
+1. **Assess Requirements**: Confirm the need for bilingual support and identify specific tasks requiring English and Spanish.
+2. **Set Clear Expectations**: Define quality standards for both languages and ensure they are understood.
+3. **Use Consistent Terminology**: Maintain a glossary of terms in both languages to ensure consistency.
+4. **Document Everything**: Keep a record of decisions and changes for accountability.
+5. **Review Process**: Ensure there is a structured review process for both languages.
+6. **Test Deliverables**: Validate that all deliverables meet the requirements in both languages.
+7. **Capture Lessons Learned**: Document what worked and what didn’t for future reference.
+8. **Maintain Professionalism**: Keep all communications professional and focused on the project.
+9. **Stay Flexible**: Be prepared to adjust the approach if challenges arise.
+10. **Ensure Timely Delivery**: Monitor progress to avoid delays in deliverable submission.",,
+9,edge_case,Answer in exactly 3 bullets: my model output is empty for all prompts after deployment. What should I check first?,"- **Model Configuration**: Verify that the model is correctly configured and deployed, including checking the model endpoint, version, and any necessary parameters or settings.
+
+- **Input Data**: Ensure that the input prompts are being correctly formatted and passed to the model. Check for any issues with data types, encoding, or preprocessing steps.
+
+- **Error Logs**: Review the deployment logs and error messages for any indications of failures or exceptions that may be occurring during the inference process.","- Verify that the deployment configuration matches the training configuration to ensure consistency.
+- Check the logs for any errors or warnings during deployment that could affect output generation.
+- Confirm that the input data format aligns with the expected format defined in the prompt template.",,
+10,edge_case,I can only run one more training due to budget. Give the single highest-impact dataset improvement and why.,"To maximize the impact of a single training run, focus on **data quality improvement** rather than simply increasing the quantity of data. Specifically, consider the following high-impact dataset improvement:
+
+### Improve Data Labeling Quality
+
+**Why?**
+1. **Accuracy**: High-quality labels lead to better model performance. If your dataset has noisy or incorrect labels, your model will learn from these inaccuracies, leading to poor generalization on unseen data.
+2. **Bias Reduction**: Improving the labeling process can help identify and reduce biases in the dataset, which is crucial for building fair and robust models.
+3. **Focused Learning**: By ensuring that the labels are consistent and accurate, the model can learn more effectively from the data it has, rather than being misled by erroneous labels.
+
+### Implementation Steps:
+1. **Review and Audit**: Conduct a thorough review of a sample of the labeled data to identify common labeling errors or inconsistencies.
+2. **Re-labeling**: If possible, re-label the most problematic sections of the dataset, or employ a more reliable labeling process (e.g., using expert annotators or crowd-sourcing with clear guidelines).
+3. **Quality Control**: Implement a quality control mechanism for future labeling efforts, such as double-checking a subset of labels or using consensus among multiple annotators.
+
+By focusing on improving the quality of your dataset's labels, you can significantly enhance the performance of your model in a single training run, making it a high-impact investment for your budget.","The single highest-impact dataset improvement is to ensure all training examples are present in the training set before starting the training. This is critical because if any required examples are missing, the model will produce incorrect outputs for those cases and you will have no way to validate that. The impact is high because it prevents wasted compute on a training that cannot be evaluated.",,
+11,direct_comparison,"Provide a concise, numbered procedure to extract training and validation loss from Foundry and interpret overfitting risk.","To extract training and validation loss from Foundry and interpret the risk of overfitting, follow these steps:
+
+1. **Access the Model Training Logs**:
+   - Navigate to the Foundry platform and locate the model training job you want to analyze.
+
+2. **Locate Loss Metrics**:
+   - In the training logs or results section, find the metrics related to training loss and validation loss. These are typically displayed as a series of values over epochs.
+
+3. **Export the Loss Data**:
+   - If available, use the export feature to download the training and validation loss data as a CSV or similar format for easier analysis.
+
+4. **Plot the Loss Curves**:
+   - Use a data visualization tool (like Matplotlib in Python) to plot the training loss and validation loss against the number of epochs. This will help visualize the trends.
+
+5. **Analyze the Curves**:
+   - Look for the following patterns:
+     - **Underfitting**: If both training and validation losses are high, the model may be too simple.
+     - **Good Fit**: If training and validation losses decrease and converge, the model is likely well-fitted.
+     - **Overfitting**: If training loss decreases while validation loss starts to increase, the model is overfitting to the training data.
+
+6. **Quantify Overfitting Risk**:
+   - Calculate the difference between training and validation losses. A large gap indicates a higher risk of overfitting.
+
+7. **Implement Regularization Techniques** (if needed):
+   - If overfitting is detected, consider applying techniques such as dropout, L2 regularization, or early stopping to improve model generalization.
+
+8. **Re-evaluate the Model**:
+   - After adjustments, retrain the model and repeat the loss extraction and analysis process to ensure improvements.
+
+By following these steps, you can effectively extract and interpret training and validation losses from Foundry, allowing you to assess and mitigate","Here is a concise, numbered procedure to extract training and validation loss from Foundry and interpret overfitting risk:
+
+1. **Prepare Your Dataset**:
+   - Ensure your dataset is clean and structured according to the requirements of your Foundry job.
+   - Use a small validation set to validate quickly before scaling up.
+
+2. **Execute the Job**:
+   - Use a descriptive name for your job to avoid confusion.
+   - Monitor resource usage to avoid exceeding limits.
+
+3. **Extract Required Outputs**:
+   - Ensure all required outputs are extracted and properly formatted.
+   - Keep outputs organized by job section to simplify review.
+
+4. **Interpret Results**:
+   - Compare training and validation losses side by side.
+   - Note any discrepancies and potential causes.
+
+5. **Document Your Process**:
+   - Use clear section headers in your notebook.
+   - Include a brief justification for each setting you chose.
+
+6. **Save Artifacts**:
+   - Save artifacts with descriptive names to avoid confusion.
+   - Verify that all required artifacts are saved before finishing the job.
+
+7. **Review Before Submission**:
+   - Check that all required sections are complete.
+   - Ensure no placeholder text remains in the notebook.",,
+12,direct_comparison,"Write a beginner-friendly response for: ""I am lost in Azure AI Foundry menus. What exact sequence should I follow for fine-tuning and evaluation?""","Absolutely, I can help with that! Navigating Azure AI Foundry can be a bit overwhelming at first, but I’ll guide you through a simple sequence for fine-tuning and evaluating your model. Here’s a step-by-step approach:
+
+### Step 1: Access Azure AI Foundry
+1. **Log in to Azure Portal**: Go to the Azure portal and log in with your credentials.
+2. **Navigate to AI Foundry**: Find and select the Azure AI Foundry service from your dashboard or the ""All Services"" menu.
+
+### Step 2: Create or Select a Project
+1. **Create a New Project**: If you don’t have a project yet, click on “Create Project” and follow the prompts to set it up.
+2. **Select Your Project**: If you already have a project, click on it to open the project dashboard.
+
+### Step 3: Upload Your Data
+1. **Data Management**: Look for the “Data” or “Datasets” section in the menu.
+2. **Upload Data**: Click on “Upload” to add your training data. Make sure your data is in the correct format.
+
+### Step 4: Model Selection
+1. **Choose a Model**: Go to the “Models” section. You can either select a pre-built model or create a new one.
+2. **Fine-Tuning**: If you’re fine-tuning an existing model, select it and look for the “Fine-Tune” option.
+
+### Step 5: Fine-Tuning the Model
+1. **Configure Fine-Tuning**: Follow the prompts to adjust the parameters for your fine-tuning process. This may include selecting your dataset, adjusting learning rates, etc.
+2. **Start Fine-Tuning**: Once you’ve configured everything, click on “Start Fine-Tuning” or a similar button to begin the process.
+
+### Step 6: Monitor Progress
+1. **Check Status","Here’s a beginner-friendly response for that question:
+
+---
+
+**Response: Beginner-Friendly Approach to Fine-Tuning and Evaluation in Azure AI Foundry**
+
+1. **Goal**: Complete fine-tuning and evaluation for a simple classification task.
+2. **Steps**:
+   - Go to Azure AI Foundry and select your project first.
+   - Use the default-safe base and validate all required outputs.
+   - Check costs after each major action to avoid surprises.
+   - Save outputs in the notebook section that matches the task.
+3. **Tips**:
+   - Keep notes in your notebook for each action you take.
+   - If you hit a quota error, wait 10 minutes before retrying.
+   - Use descriptive names for all resources you create.
+4. **Expected Outcome**: A clear comparison of base and fine-tuned responses.
+5. **Troubleshooting**:
+   - If the deployment fails, check the logs and ensure all required fields are filled.
+   - If metrics are missing, re-run the evaluation section after checking settings.
+
+---
+
+This response is structured to be clear and actionable for beginners.",,
