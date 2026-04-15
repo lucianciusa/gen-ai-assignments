@@ -6,6 +6,7 @@ Repository for all Generative AI assignments, supporting materials, and study no
 
 Each assignment lives in its own folder and may include notebooks, helper scripts, assets, and documentation.
 
+1. Azure AI Foundry fundamentals: guardrails, reasoning + function calling, and multimodal basics.
 - `01-foundry_exploration/`
   - `*.ipynb`
   - `*.py`
@@ -14,12 +15,24 @@ Each assignment lives in its own folder and may include notebooks, helper script
   - `docs/`
   - `instructions/`
 
+
+2. Prompt design techniques and controlled experiments with model parameters.
 - `02-prompt_engineering-models_parameters/`
   - `*.ipynb`
   - `assets/`
   - `images/`
   - `docs/`
   - `instructions/`
+
+3. End-to-end fine-tuning workflow, including stored completions and base-vs-distilled evaluation.
+- `03-fine_tuning/`
+  - `*.ipynb`
+  - `assets/`
+  - `data/`
+  - `images/`
+  - `docs/`
+  - `instructions/`
+  - `outputs/`
 
 ## Organization Notes
 
