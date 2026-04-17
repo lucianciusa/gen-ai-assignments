@@ -34,6 +34,19 @@ Each assignment lives in its own folder and may include notebooks, helper script
   - `instructions/`
   - `outputs/`
 
+4. Embeddings and vector databases in Azure AI Search: indexing pipeline, vector/hybrid/semantic retrieval, and scoring-profile relevance tuning.
+- `04-embeddings_and_vector_databases/`
+  - `01_import_data_wizard.ipynb`
+  - `02_vector_search.ipynb`
+  - `03_extra_option_b_scoring_profile.ipynb`
+  - `assets/`
+  - `images/`
+  - `docs/`
+    - `glossary_en.md`
+    - `glossary_es.md`
+    - `container_docs/`
+  - `instructions/`
+
 ## Organization Notes
 
 - Keep notebook-specific materials inside the corresponding assignment folder.
