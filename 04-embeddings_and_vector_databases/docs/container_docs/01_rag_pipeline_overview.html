@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>RAG Pipeline Overview for Azure AI Search</title>
+</head>
+<body>
+  <h1>RAG Pipeline Overview for Azure AI Search</h1>
+  <p>
+    Retrieval Augmented Generation (RAG) combines document retrieval with language model generation.
+    In Azure AI Search, a common implementation uses an index built from Blob Storage documents, embeddings for vector search,
+    semantic ranking for relevance improvements, and an application layer that sends the top passages to a chat model.
+  </p>
+
+  <h2>Core Components</h2>
+  <ul>
+    <li>Data source: Azure Blob container containing business and technical content.</li>
+    <li>Indexer: scheduled or on-demand process that ingests and enriches content.</li>
+    <li>Index: searchable structure with text fields and vector fields.</li>
+    <li>Vectorizer and embeddings model: converts text to vectors for semantic similarity search.</li>
+    <li>Retriever strategy: vector, hybrid, or semantic hybrid query mode.</li>
+  </ul>
+
+  <h2>Recommended Flow</h2>
+  <ol>
+    <li>Prepare clean and structured documents.</li>
+    <li>Configure integrated vectorization in the Import data wizard.</li>
+    <li>Validate schema, semantic configuration, and vector profile.</li>
+    <li>Run indexer and verify document ingestion.</li>
+    <li>Test query quality with vector and hybrid search patterns.</li>
+  </ol>
+
+  <h2>Quality Checklist</h2>
+  <ul>
+    <li>Documents have clear headings and compact paragraphs.</li>
+    <li>Each topic appears in multiple contexts for robust retrieval.</li>
+    <li>Index fields map correctly to title, content, and keywords.</li>
+    <li>Top-5 search results are relevant for realistic user prompts.</li>
+  </ul>
+</body>
+</html>

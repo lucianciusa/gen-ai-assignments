@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Index Schema Design Guidelines</title>
+</head>
+<body>
+  <h1>Index Schema Design Guidelines</h1>
+  <p>
+    A well-designed schema improves both retrieval quality and maintainability. Field definitions should align with expected
+    query behavior, filtering needs, and semantic ranking configuration.
+  </p>
+
+  <h2>Field Categories</h2>
+  <ul>
+    <li><strong>Key field:</strong> unique document identifier.</li>
+    <li><strong>Title field:</strong> concise document or section title.</li>
+    <li><strong>Content field:</strong> main text used for keyword and semantic relevance.</li>
+    <li><strong>Metadata fields:</strong> source, category, language, and publication date.</li>
+    <li><strong>Vector field:</strong> embeddings generated from content or chunks.</li>
+  </ul>
+
+  <h2>Configuration Advice</h2>
+  <ul>
+    <li>Mark content as searchable and retrievable.</li>
+    <li>Use filterable metadata for category and document-type constraints.</li>
+    <li>Keep field names consistent and descriptive.</li>
+    <li>Match semantic configuration fields with your most informative text.</li>
+  </ul>
+
+  <h2>Common Mistakes</h2>
+  <ul>
+    <li>Storing huge mixed-content blobs in a single field without chunking.</li>
+    <li>Forgetting to include metadata fields needed for filtering.</li>
+    <li>Using title fields that are too generic, such as "Document".</li>
+    <li>Not validating retrieval quality after index creation.</li>
+  </ul>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Search Operations and Monitoring</title>
+</head>
+<body>
+  <h1>Search Operations and Monitoring</h1>
+  <p>
+    Stable production search depends on monitoring indexing pipelines and query behavior over time.
+    Operational visibility helps detect broken ingestion, drift in relevance, and performance regressions.
+  </p>
+
+  <h2>Indexer Monitoring</h2>
+  <ul>
+    <li>Track successful and failed document counts.</li>
+    <li>Review warnings for unsupported file formats or parsing issues.</li>
+    <li>Validate schedules and re-run indexers after source updates.</li>
+  </ul>
+
+  <h2>Query Monitoring</h2>
+  <ul>
+    <li>Log query text, latency, and click-through behavior.</li>
+    <li>Review low-relevance queries and add targeted documents.</li>
+    <li>Use query samples to guide schema and ranking improvements.</li>
+  </ul>
+
+  <h2>Governance</h2>
+  <ul>
+    <li>Define ownership for index schema changes.</li>
+    <li>Maintain versioning for index and skillset updates.</li>
+    <li>Document rollback procedures for major changes.</li>
+  </ul>
+</body>
+</html>

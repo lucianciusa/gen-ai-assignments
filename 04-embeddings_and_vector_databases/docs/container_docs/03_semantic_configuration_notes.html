@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Semantic Configuration Notes</title>
+</head>
+<body>
+  <h1>Semantic Configuration Notes</h1>
+  <p>
+    Semantic ranking improves the ordering of search results by understanding intent and context, not just keyword overlap.
+    In Azure AI Search, semantic configuration defines which fields represent title, body content, and keywords.
+  </p>
+
+  <h2>Field Mapping Best Practices</h2>
+  <ul>
+    <li>Title field should capture the section topic clearly.</li>
+    <li>Content field should contain complete sentences and explanatory text.</li>
+    <li>Keyword fields should include domain terms users are likely to query.</li>
+  </ul>
+
+  <h2>Example Query Types</h2>
+  <ul>
+    <li>"How do I tune vector search for better relevance?"</li>
+    <li>"What is the difference between semantic search and hybrid search?"</li>
+    <li>"Which fields should be filterable in an enterprise index?"</li>
+  </ul>
+
+  <h2>Validation Strategy</h2>
+  <ol>
+    <li>Run 10 representative user questions.</li>
+    <li>Compare baseline keyword ranking against semantic ranking.</li>
+    <li>Check if top-3 results provide actionable and accurate guidance.</li>
+    <li>Adjust field mapping if irrelevant results dominate.</li>
+  </ol>
+</body>
+</html>

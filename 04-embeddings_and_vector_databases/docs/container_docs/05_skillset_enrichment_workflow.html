@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Skillset Enrichment Workflow</title>
+</head>
+<body>
+  <h1>Skillset Enrichment Workflow</h1>
+  <p>
+    A skillset enriches raw content before indexing. The wizard may generate built-in skills for text extraction,
+    chunking, language hints, and embeddings preparation. This enrichment improves downstream retrieval quality.
+  </p>
+
+  <h2>Typical Steps</h2>
+  <ol>
+    <li>Extract raw text from source documents.</li>
+    <li>Split long content into manageable chunks.</li>
+    <li>Apply optional normalization or language processing.</li>
+    <li>Generate embeddings for vector fields.</li>
+    <li>Map enriched output into index fields.</li>
+  </ol>
+
+  <h2>Why It Matters</h2>
+  <ul>
+    <li>Chunking avoids losing relevance in very long documents.</li>
+    <li>Structured enrichment improves semantic and vector matching.</li>
+    <li>Consistent transformation supports stable ranking behavior.</li>
+  </ul>
+
+  <h2>Troubleshooting</h2>
+  <ul>
+    <li>If no text appears in the index, check extraction and field mappings.</li>
+    <li>If vector queries fail, verify vector field type and dimensions.</li>
+    <li>If results are noisy, review chunk overlap and content quality.</li>
+  </ul>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vector Profile and Algorithm Configuration</title>
+</head>
+<body>
+  <h1>Vector Profile and Algorithm Configuration</h1>
+  <p>
+    The vector profile links embedding generation and nearest-neighbor search behavior. It combines the vectorizer
+    definition with algorithm settings so the search service can retrieve similar chunks efficiently.
+  </p>
+
+  <h2>Vectorizer Considerations</h2>
+  <ul>
+    <li>Use a single embeddings deployment for both indexing and query time.</li>
+    <li>Ensure model dimensions match the target vector field.</li>
+    <li>Document the deployment name for reproducible setup.</li>
+  </ul>
+
+  <h2>Algorithm Considerations</h2>
+  <ul>
+    <li>Use a nearest-neighbor algorithm optimized for high-dimensional vectors.</li>
+    <li>Validate top-k relevance on realistic prompts, not synthetic-only queries.</li>
+    <li>Start with defaults, then tune if quality or latency is insufficient.</li>
+  </ul>
+
+  <h2>Operational Tips</h2>
+  <ul>
+    <li>Keep chunk size stable during experiments.</li>
+    <li>Track quality changes after each configuration update.</li>
+    <li>Record algorithm and vectorizer settings in your notebook evidence.</li>
+  </ul>
+</body>
+</html>

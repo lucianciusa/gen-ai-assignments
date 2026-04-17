@@ -9,6 +9,8 @@ plotly
 
 # Azure AI / Foundry SDKs (adjust versions as needed)
 azure-ai-inference
+azure-search-documents
 azure-identity
 azure-storage-blob
+azure-search-documents
 openai

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hybrid Search Playbook</title>
+</head>
+<body>
+  <h1>Hybrid Search Playbook</h1>
+  <p>
+    Hybrid search combines vector similarity and lexical matching. This often performs better than vector-only or
+    keyword-only approaches in enterprise content with mixed terminology.
+  </p>
+
+  <h2>When to Use Hybrid Search</h2>
+  <ul>
+    <li>Users write natural language questions with domain-specific terms.</li>
+    <li>Documents include exact identifiers such as product IDs or policy names.</li>
+    <li>You need a balance between semantic understanding and precise term matches.</li>
+  </ul>
+
+  <h2>Query Patterns</h2>
+  <ul>
+    <li>Vector-only: best for conceptual similarity.</li>
+    <li>Keyword-only: best for exact term recall.</li>
+    <li>Hybrid: recommended default for practical retrieval systems.</li>
+    <li>Semantic hybrid: stronger ranking quality when semantic configuration is mature.</li>
+  </ul>
+
+  <h2>Evaluation Checklist</h2>
+  <ol>
+    <li>Prepare 10 to 20 representative prompts.</li>
+    <li>Capture top-5 results for each search mode.</li>
+    <li>Mark relevance manually and compare averages.</li>
+    <li>Use findings to tune field mappings and ranking options.</li>
+  </ol>
+</body>
+</html>
