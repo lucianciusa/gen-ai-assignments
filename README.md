@@ -47,6 +47,10 @@ Each assignment lives in its own folder and may include notebooks, helper script
     - `container_docs/`
   - `instructions/`
 
+5. RAG final assignment moved to a dedicated repository.
+- `05-RAG/` (redirect)
+  - `README.md` with the external repository link
+
 ## Organization Notes
 
 - Keep notebook-specific materials inside the corresponding assignment folder.
