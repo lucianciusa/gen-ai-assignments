@@ -51,15 +51,20 @@ Each assignment lives in its own folder and may include notebooks, helper script
 - `05-RAG/` (redirect)
   - `README.md` with the external repository link
 
-6. Artificial Neural Networks: House price prediction using neural networks.
+6. Artificial Neural Networks: end-to-end housing price regression with Keras (EDA, preprocessing, hyperparameter sweep, K-Fold cross validation, ensemble of 5 networks, and a linear regression baseline).
 - `06-ann/`
   - `01_ann_housing_prices.ipynb`
-  - `assets/`
+  - `housing_ann_model.keras`
+  - `housing.csv`
   - `images/`
   - `docs/`
+    - `glossary_en.md`
+    - `glossary_es.md`
   - `instructions/`
     - `tasks_en.md`
     - `tasks_es.md`
+  - `outputs/`
+  - `TEORIA.md`, `REFS.md`, `rna_base.ipynb` (templates and study notes)
 
 ## Organization Notes
 

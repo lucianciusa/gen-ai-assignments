@@ -5,7 +5,11 @@ python-dotenv
 pandas
 matplotlib
 plotly
+seaborn
 
+# ML / deep learning (assignments 03, 06)
+scikit-learn
+tensorflow
 
 # Azure AI / Foundry SDKs (adjust versions as needed)
 azure-ai-inference

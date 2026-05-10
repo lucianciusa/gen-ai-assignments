@@ -1,0 +1,47 @@
+{
+  "feature_names": [
+    "area",
+    "bedrooms",
+    "bathrooms",
+    "stories",
+    "mainroad",
+    "guestroom",
+    "basement",
+    "hotwaterheating",
+    "airconditioning",
+    "parking",
+    "prefarea",
+    "furnishingstatus_semi-furnished",
+    "furnishingstatus_unfurnished"
+  ],
+  "numeric_cols": [
+    "area",
+    "bedrooms",
+    "bathrooms",
+    "stories",
+    "parking"
+  ],
+  "num_idx": [
+    0,
+    1,
+    2,
+    3,
+    9
+  ],
+  "scaler_mean": [
+    5154.144495412844,
+    2.958715596330275,
+    1.2660550458715596,
+    1.7821100917431192,
+    0.6857798165137615
+  ],
+  "scaler_scale": [
+    2201.7843305590554,
+    0.7469461998943238,
+    0.47684363284095677,
+    0.8571079743083292,
+    0.8539597927689695
+  ],
+  "y_mean": 4706527.0,
+  "y_std": 1755959.125
+}

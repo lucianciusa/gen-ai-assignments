@@ -10,7 +10,11 @@ __pycache__/
 *.pyd
 *.egg-info/
 .venv/
+.venv-*/
 venv/
+*/.venv/
+*/.venv-*/
+*/venv/
 
 # Jupyter artifacts
 .ipynb_checkpoints/
