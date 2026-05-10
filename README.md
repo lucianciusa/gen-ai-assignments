@@ -51,6 +51,16 @@ Each assignment lives in its own folder and may include notebooks, helper script
 - `05-RAG/` (redirect)
   - `README.md` with the external repository link
 
+6. Artificial Neural Networks: House price prediction using neural networks.
+- `06-ann/`
+  - `01_ann_housing_prices.ipynb`
+  - `assets/`
+  - `images/`
+  - `docs/`
+  - `instructions/`
+    - `tasks_en.md`
+    - `tasks_es.md`
+
 ## Organization Notes
 
 - Keep notebook-specific materials inside the corresponding assignment folder.
