@@ -66,6 +66,16 @@ Each assignment lives in its own folder and may include notebooks, helper script
   - `outputs/`
   - `TEORIA.md`, `REFS.md`, `rna_base.ipynb` (templates and study notes)
 
+7. Convolutional Neural Networks (CNN).
+- `07-cnn/`
+  - `01_cnn.ipynb`
+  - `assets/`
+  - `images/`
+  - `docs/`
+  - `instructions/`
+    - `tasks_en.md`
+    - `tasks_es.md`
+
 ## Organization Notes
 
 - Keep notebook-specific materials inside the corresponding assignment folder.
