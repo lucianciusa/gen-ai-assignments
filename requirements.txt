@@ -7,9 +7,13 @@ matplotlib
 plotly
 seaborn
 
-# ML / deep learning (assignments 03, 06)
+# ML / deep learning (assignments 03, 06, 07)
 scikit-learn
 tensorflow
+Pillow
+
+# Deployment (assignment 07)
+flask
 
 # Azure AI / Foundry SDKs (adjust versions as needed)
 azure-ai-inference

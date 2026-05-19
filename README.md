@@ -66,12 +66,17 @@ Each assignment lives in its own folder and may include notebooks, helper script
   - `outputs/`
   - `TEORIA.md`, `REFS.md`, `rna_base.ipynb` (templates and study notes)
 
-7. Convolutional Neural Networks (CNN).
+7. Convolutional Neural Networks: MNIST digit recognition for postal code routing (EDA, preprocessing with augmentation, CNN with BatchNorm + Dropout, confusion matrix, error analysis, Flask web app with custom HTML/CSS/JS UI).
 - `07-cnn/`
   - `01_cnn.ipynb`
-  - `assets/`
+  - `app.py` (Flask inference API)
+  - `templates/index.html` (UI markup)
+  - `static/css/style.css`, `static/js/app.js` (UI styles + behavior)
+  - `mnist_cnn_model.keras` (generated after running the notebook)
   - `images/`
   - `docs/`
+    - `glossary_en.md`
+    - `glossary_es.md`
   - `instructions/`
     - `tasks_en.md`
     - `tasks_es.md`
