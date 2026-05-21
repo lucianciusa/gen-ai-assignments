@@ -81,6 +81,16 @@ Each assignment lives in its own folder and may include notebooks, helper script
     - `tasks_en.md`
     - `tasks_es.md`
 
+8. GANs and Autoencoders: Use case for Automated Document Restoration (denoising dirty documents using generative models).
+- `08-autoencoders_gans/`
+  - `01_autoencoders_gans.ipynb`
+  - `assets/`
+  - `images/`
+  - `docs/`
+  - `instructions/`
+    - `tasks_en.md`
+    - `tasks_es.md`
+
 ## Organization Notes
 
 - Keep notebook-specific materials inside the corresponding assignment folder.
